@@ -1,0 +1,7 @@
+services:
+  cloudburst:
+    build:
+      context: ./dockerfiles
+      dockerfile: cloudburst.local.dockerfile
+    volumes:
+      - ../scripts:/hydro/scripts
