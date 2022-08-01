@@ -43,7 +43,7 @@ WORKDIR /
 # better way to do package management for Python.
 RUN apt-get update
 RUN apt-get install -y libjpeg-dev zlib1g-dev 
-RUN pip3 install tensorflow tensorboard scikit-image
+RUN pip3 install tensorflow tensorboard scikit-image scikit-learn
 
 COPY start-cloudburst.local.sh /start-cloudburst.local.sh
 
